@@ -1,0 +1,135 @@
+body{
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+.top-container{
+    background-image: url(/resources/container-backgrounds/pexels-gustavo-fring-6817008.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+}
+nav ul{
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+nav ul li{
+    padding: 1rem;
+    /* font-size: x-small; */
+    color: #ffffff;
+}
+.color-trial{
+    height: 41rem;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+    background-color: rgba(0, 0, 0, 0.507);
+}
+.navbar{
+    background-color: #FF8A08;
+}
+.null{
+    height: 20rem;
+    width: 100rem;
+    display: flex;
+    /* background-color: red; */
+}
+.top-content{
+    display: flex;
+    justify-content: space-between;
+}
+.top-content h1{
+    color: #ffffff;
+}
+.top-content h3{
+    color: #ffffff;
+    font-weight: 100;
+    word-spacing: 2px;
+}
+/* BUTTON */
+#ride-btn{
+    padding: 15px 10px;
+    color: #ffff;
+    background-color: #FF8A08;
+    border-radius: 15px;
+    border: none;
+}
+#ride-btn:hover{
+    background-color: black;
+}
+/* second container */
+.sec-img{
+    height: 23rem;
+}
+.second-content{
+    display: flex;
+    justify-content: space-evenly;
+}
+.sec-color{
+    background-color: #FF8A08;
+    padding: 30px;
+}
+.sec-color p{
+    width: 30rem;
+    color: #ffffff;
+    text-align: justify;
+    /* word-spacing: 1px; */
+}
+.second-container{
+    margin: 0 auto;
+    width: 80%;
+}
+#rider-btn{
+    padding: 15px 10px;
+    color: #ffff;
+    background-color: #FF8A08;
+    border-radius: 15px;
+    border: none;
+    border: 2px solid black;
+}
+#rider-btn:hover{
+    background-color: black;
+}
+
+
+
+
+
+
+  /* for phone */
+@media(min-width: 319px) and (max-width: 520px){
+    nav{
+        display: none;
+    }
+    .color-trial{
+        height: 50rem;
+    }
+    .top-container{
+        background-position: left;
+    }
+    .null{
+        display: none;
+    }
+    .active{
+        padding: 2rem;
+        padding-bottom: 7rem;
+    }
+    /* second-container */
+    .second-content{
+        flex-direction: column;
+    }
+    .sec-img{
+        height: 13.6rem;
+    }
+    .sec-color p{
+        width: 13rem;
+    }
+
+
+}
