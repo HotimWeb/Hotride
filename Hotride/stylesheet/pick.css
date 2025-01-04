@@ -1,0 +1,143 @@
+body{
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+.top-container{
+    background-image: url(/Hotride/resources/second-content.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+}
+nav ul{
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+nav ul li{
+    padding: 1rem;
+    /* font-size: x-small; */
+    color: #ffffff;
+}
+nav ul li a{
+    text-decoration: none;
+    color: white;
+}
+nav ul li a:hover{
+    color: black;
+}
+.color-trial{
+    height: 36.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+    background-color: rgba(0, 0, 0, 0.507);
+}
+.navbar{
+    background-color: #FF8A08;
+}
+.top-content{
+    text-align: center;
+    color: #FF8A08;
+    padding-bottom: 13rem;
+}
+.sect-cont{
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+}
+.st-servi{
+    width: 23rem;
+    background-color: rgba(245, 241, 241, 0.393);
+    border-radius: 15px;
+    padding: 1rem;
+}
+.st-servi-pics{
+    height: 10rem;
+}
+.st-servi h1{
+    background-color: #FF8A08;
+    color: #ffff;
+}
+/* BUTTON */
+#ride-btn{
+    padding: 15px 10px;
+    color: #ffff;
+    background-color: #FF8A08;
+    border-radius: 15px;
+    border: none;
+}
+#ride-btn:hover{
+    background-color: black;
+}
+.tret{
+    text-align: center;
+    width: 15rem;
+    background-color: #FF8A08;
+    margin: auto;
+    border-radius: 15px;
+    color: white;
+}
+
+/* fourth-container */
+.fourth-container{
+    background-color: rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+.ne-cl{
+    display: flex;
+    justify-content: space-between;
+}
+
+.view-btn{
+    padding: 10px 15px;
+    border-radius: 15px;
+    background-color: #FF8A08;
+    color: white;
+    border: 2px #FF8A08;
+}
+.btn-mode{
+    margin-top: 1.5rem;
+}
+.stopi-c{
+    height: 13rem;
+}
+.stopi-cd{
+    height: 13rem;
+}
+.stori{
+    display: flex;
+    justify-content: space-around;
+}
+.steo h2{
+    width: 19rem;
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+
+
+ /* for phone */
+ @media(min-width: 319px) and (max-width: 520px){
+    .sect-cont{
+        flex-direction: column;
+    }
+    /* fourth-container */
+    .stori{
+        flex-direction: column;
+         align-items: center;
+     }
+     .stopi-c{
+         height: 12rem;
+     }
+     .stopi-cd{
+         width: 19rem;
+     }
+ }
+

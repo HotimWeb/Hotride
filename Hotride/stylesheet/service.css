@@ -1,0 +1,184 @@
+body{
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+.top-container{
+    background-image: url(/Hotride/resources/crage.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+}
+nav ul{
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+nav ul li{
+    padding: 1rem;
+    /* font-size: x-small; */
+    color: #ffffff;
+}
+nav ul li a{
+    text-decoration: none;
+    color: white;
+}
+nav ul li a:hover{
+    color: black;
+}
+.color-trial{
+    height: 30rem;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+    /* background-color: rgba(0, 0, 0, 0.507); */
+}
+.navbar{
+    background-color: #FF8A08;
+}
+.top-content{
+    color: #FF8A08;
+    text-align: center;
+}
+.top-content h1{
+    border: 2px solid white;
+    /* border-width: 4px; */
+    width: 20rem;
+    margin: auto;
+    border-radius: 15px;
+    font-size: 3rem;
+}
+.horizontal-line{
+    border: solid 2px white ;
+    width: 20rem;
+    margin: auto;
+}
+/* second container */
+.form-page{
+    background-color:  rgba(74, 77, 74, 0.505);
+    padding: 10px;
+    border-radius: 15px;
+    /* color: white; */
+}
+.form-page p{
+    color: white;
+}
+.form-page h2{
+    color: white;
+    text-align: center;
+}
+
+
+
+#ride-btn{
+    padding: 15px 10px;
+    color: #ffff;
+    background-color: #FF8A08;
+    border-radius: 15px;
+    border: none;
+    border: 2px solid white;
+    text-align: center;
+}
+#ride-btn:hover{
+    background-color: black;
+}
+.headh1w{
+    width: 20rem;
+    text-align: center;
+    color: white;
+    background-color: #FF8A08;
+    border-radius: 15px;
+    margin: auto;
+    /* padding: 1px; */
+}
+.headh1w h2{
+    padding: 3px;
+}
+.req-rid{
+    padding-top: 7rem;
+}
+.request-rd{
+    display: flex;
+    justify-content: space-around;
+}
+.request-rdr{
+    display: flex;
+    justify-content: space-around;
+}
+.request-pics{
+    height: 15rem;
+}
+/* fourth-container */
+.fourth-container{
+    background-color: rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+.ne-cl{
+    display: flex;
+    justify-content: space-between;
+}
+
+.view-btn{
+    padding: 10px 15px;
+    border-radius: 15px;
+    background-color: #FF8A08;
+    color: white;
+    border: 2px #FF8A08;
+}
+.btn-mode{
+    margin-top: 1.5rem;
+}
+.stopi-c{
+    height: 13rem;
+}
+.stopi-cd{
+    height: 13rem;
+}
+.stori{
+    display: flex;
+    justify-content: space-around;
+}
+.steo h2{
+    width: 19rem;
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+
+
+@media(min-width: 319px) and (max-width: 520px){
+    nav{
+        display: none;
+    }
+    .request-rd{
+        flex-direction: column;
+        align-items: center;
+    }
+    .request-rdr{
+        flex-wrap: wrap-reverse;
+    }
+    .request-pics{
+        height: 9rem;
+    }
+    .req-rid{
+        padding-top: 2rem;
+    }
+    /* fourth-container */
+    .stori{
+        flex-direction: column;
+         align-items: center;
+     }
+     .stopi-c{
+         height: 12rem;
+     }
+     .stopi-cd{
+         width: 19rem;
+     }
+
+}

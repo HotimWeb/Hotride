@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="/stylesheet/style.css">
+    <link rel="stylesheet" href="/Hotride/stylesheet/style.css">
+    <script defer src="/Hotride/javascript/index.js"></script>
 </head>
 <body>
     <div class="top-container">
@@ -14,11 +15,30 @@
                     <h3>Hotride</h3>
                 </div>
                 <nav class="nav">
-                    <ul>
+                    <ul class="sidebar">
+                        <li onClick="hideSidebar()">
+                            <a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px"
+                                fill="#0C359E">
+                                <path
+                                  d="m251.33-204.67-46.66-46.66L433.33-480 204.67-708.67l46.66-46.66L480-526.67l228.67-228.66 46.66 46.66L526.67-480l228.66 228.67-46.66 46.66L480-433.33 251.33-204.67Z" />
+                              </svg></a>
+                          </li>
                         <li>Home</li>
-                        <li>Service</li>
+                        <li><a href="/Hotride/html/service.html">Service</a></li>
                         <li>About us</li>
-                        <li>Book a Ride</li>
+                        <li> <a href="/Hotride/html/pick.html">Book a Ride</a></li>
+                    </ul>
+                    <ul>
+                        <li class="hideOnMobile">Home</li>
+                        <li class="hideOnMobile"><a href="/Hotride/html/service.html">Service</a></li>
+                        <li class="hideOnMobile">About us</li>
+                        <li class="hideOnMobile"> <a href="/Hotride/html/pick.html">Book a Ride</a></li>
+                        <li class="menu-button" onClick="showSidebar()">
+                            <a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px"
+                                fill="#6EACDA">
+                                <path d="M120-240v-66.67h720V-240H120Zm0-206.67v-66.66h720v66.66H120Zm0-206.66V-720h720v66.67H120Z" />
+                              </svg></a>
+                          </li>
                     </ul>
                 </nav>
             </div>
@@ -29,7 +49,7 @@
                 <div class="active">
                     <h1>Book A Ride throughout a day</h1>
                     <h3>Book a Hotride for full day, weeks or months to go anywhere, everywhere with our experine drivers to provide you with comforts all through the ride. </h3>
-                    <button id="ride-btn">Book a ride.</button>
+                    <button id="ride-btn"><a href="/Hotride/html/pick.html">Book a ride</a></button>
                 </div>
             </div>
         </div>
@@ -40,19 +60,140 @@
         </div>
         <div class="second-content">
             <div>
-                <img class="sec-img" src="/resources/second-content.jpg">
+                <img class="sec-img" src="/Hotride/resources/second-content.jpg">
             </div>
             <div class="sec-color">
                 <p>
-                    🔸Experienced Drivers: Our drivers are highly trained and have extensive knowledge of the area. They are professional, friendly, and dedicated to providing safe, smooth, and comfortable rides.
-                </p>
-                <p>
-                    🔸Convenience: With Hotride, you have the flexibility to book rides when you need them most, whether for business, leisure, or goods transportation.
-                </p>
-                <p>
-                    🔸Dependable Service: At Hotride, we prioritize reliability. Count on us to be there when you need us, with punctual pickups, clean vehicles, and a high standard of service.
+                    🔸<span class="black-words">Experienced Drivers:</span> Our drivers are highly trained and have extensive knowledge of the area. They are professional, friendly, and dedicated to providing safe, smooth, and comfortable rides.
                 </p>
                 <br>
+                <p>
+                    🔸<span class="black-words">Convenience:</span> With Hotride, you have the flexibility to book rides when you need them most, whether for business, leisure, or goods transportation.
+                </p>
+                <br>
+                <p>
+                    🔸<span class="black-words">Dependable Service:</span> At Hotride, we prioritize reliability. Count on us to be there when you need us, with punctual pickups, clean vehicles, and a high standard of service.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="third-container">
+        <h2>Service We Provide</h2>
+        <p>
+            Every service listed here is avaliable for 24/7 everyday
+        </p>
+        <div class="horizontal-line"></div>
+        <br>
+        <div class="services">
+            <div class="st-servi">
+                <img class="st-servi-pics" src="/Hotride/resources/car png.png">
+                <h3>Request Rides</h3>
+                <p>Request ride and get an experienced driver to take you anywhere of your choice</p>
+                <button id="ride-btn"><a href="/Hotride/html/pick.html">Book a ride</a></button>
+            </div>
+            <div class="st-servi">
+                <img class="st-servi-pics" src="/Hotride/resources/steering.png">
+                <h3>Company Reservation</h3>
+                <p>Are you new in our city and on offical assignment?, lets take care of the road while you concentrate on work</p>
+                <button id="ride-btn"><a href="/Hotride/html/pick.html">Book a ride</a></button>
+            </div>
+            <div class="st-servi">
+                <img class="st-servi-pics-b" src="/Hotride/resources/—Pngtree—food delivery service by scooter_16174920.png">
+                <h3>Logistics</h3>
+                <p>Do you need who you can trust your goods with?, lets help youu save time and money with easy delivery </p>
+                <button id="ride-btn"><a href="/Hotride/html/pick.html">Book a ride</a></button>
+            </div>
+        </div>
+    </div>
+    <br>
+    <div class="headh1w">
+        <h2>Company Reservation</h2>
+    </div>
+    <br>
+    <div class="request-rd">
+            <div class="form-page">
+                <form onsubmit="contact(event)">
+                    <p>Book rides for a Day,  Weeks, or Months</p>
+                  <input class="input-text" type="text" id="company_name" name="company_name" placeholder="Company name"><br><br>
+
+                  <input class="input-text" type="text" id="first_name" name="first_name" placeholder="full name" required><br><br>
+        
+                  <input class="input-text" type="tel" id="phone" name="phone" placeholder="phone number" required><br><br>
+
+                  <input class="input-email" type="email" id="contact_email" name="email" placeholder="email" required><br><br>
+    
+                  <input class="input-text" type="text" id="position" name="position" placeholder="Pickup location"><br><br>
+    
+                  <textarea id="help" name="help" rows="4" cols="50" placeholder="Destinations"></textarea><br><br>
+
+                  <!-- <button class="submit-btn" type="submit">Submit</button> -->
+        
+                  <!-- <input class="submit-btn" type="submit" value="Submit"> -->
+                </form>
+            </div>
+            <div class="req-rid">
+             <img class="request-pics" src="/Hotride/resources/car png.png">
+            </div>
+    </div>
+    <br>
+    <div class="headh1">
+        <h2>Logistics</h2>
+    </div>
+    <br>
+    <div class="logistics-container">
+        <div class="req-rid">
+            <img class="request-pics" src="/Hotride/resources/—Pngtree—food delivery service by scooter_16174920.png">
+        </div>
+        <div class="form-page">
+            <p>Your goods are safe with us</p>
+            <form onsubmit="contact(event)">
+                <input class="input-text" type="text" id="first_name" name="first_name" placeholder="full name" required><br><br>
+      
+                <input class="input-text" type="tel" id="phone" name="phone" placeholder="phone number" required><br><br>
+
+                <input class="input-email" type="email" id="contact_email" name="email" placeholder="email" required><br><br>
+
+                <input class="input-text" type="text" id="company_name" name="company_name" placeholder="Pickup Items"><br><br>
+
+                <input class="input-text" type="text" id="position" name="position" placeholder="Pickup location"><br><br>
+
+                <input class="input-text" type="text" id="position" name="position" placeholder="Destination"><br><br>
+
+                <!-- <button class="submit-btn">Submit</button> -->
+  
+    
+              <!-- <input class="submit-btn" type="submit" value="Submit"> -->
+            </form>
+        </div>
+    </div>
+    <br>
+    <div class="fourth-container">
+        <div class="ne-cl">
+            <div>
+                <h1>Newsletters updates</h1>
+            </div>
+            <div class="btn-mode">
+                <button class="view-btn">View all</button>
+            </div>
+        </div>
+        <div class="stori">
+            <div>
+                <img class="stopi-c" src="/Hotride/resources/city.jpg" alt="city-pics">
+                <div class="steo">
+                    <h2>We have aided over a 2000 tourist new in the city. </h2>
+                </div>
+            </div>
+            <div>
+                <img class="stopi-cd" src="/Hotride/resources/speed.jpg" alt="city-pics">
+                <div class="steo">
+                    <h2>No overspeeding, your life matters to us</h2>
+                </div>
+            </div>
+            <div>
+                <img class="stopi-c" src="/Hotride/resources/crage.jpg" alt="city-pics">
+                <div class="steo">
+                    <h2>Our car reservations is the No1. people's choice</h2>
+                </div>
             </div>
         </div>
     </div>

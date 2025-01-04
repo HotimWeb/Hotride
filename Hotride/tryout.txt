@@ -1,0 +1,22 @@
+            <div class="form-page">
+                <p>Book rides for a Day,  Weeks, or Months</p>
+                <form onsubmit="contact(event)">
+                  <input class="input-text" type="text" id="first_name" name="first_name" placeholder="Full Name" required><br><br>
+
+                  <input class="input-text" type="tel" id="phone" name="phone" placeholder="Phone Number" required><br><br>
+
+                  <input class="input-email" type="email" id="contact_email" name="email" placeholder="Email address" required><br><br>
+
+                  <div class="bt-flex">
+                    <label for="position">Offical Assignment</label><br>
+                  <input class="input-text" type="checkbox" id="last_name" name="last_name" required><br><br>
+                  <input class="input-text" type="checkbox" id="last_name" name="last_name" required><br><br>
+                  </div>
+                  
+                  <input class="input-text" type="text" id="position" name="position" placeholder="Pickup position"><br><br>
+        
+                  <textarea id="help" name="help" rows="2" cols="50" placeholder="Destinations"></textarea><br><br>
+        
+                  <input class="submit-btn" type="submit" value="Submit">
+                </form>
+            </div>
