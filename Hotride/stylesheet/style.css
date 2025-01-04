@@ -325,8 +325,8 @@ a{
   /* for phone */
 @media(min-width: 319px) and (max-width: 520px){
     /* nav funcctions */
-    nav{
-        display: none;
+    .nav a{
+        color: #FF8A08;
     }
     .hideOnMobile{
         display: none;

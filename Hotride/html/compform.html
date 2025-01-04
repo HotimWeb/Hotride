@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="/Hotride/stylesheet/compform.css">
+    <script defer src="/Hotride/javascript/compform.js"></script>
 </head>
 <body>
     <div class="top-container">
@@ -14,15 +15,33 @@
                     <h3>Hotride</h3>
                 </div>
                 <nav class="nav">
-                    <ul>
-                        <li><a href="/Hotride/index.html">Home</a></li>
-                        <li><a href="/Hotride/html/service.html"></a>Service</li>
+                    <ul class="sidebar">
+                        <li onClick="hideSidebar()">
+                            <a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px"
+                                fill="#FF8A08">
+                                <path
+                                  d="m251.33-204.67-46.66-46.66L433.33-480 204.67-708.67l46.66-46.66L480-526.67l228.67-228.66 46.66 46.66L526.67-480l228.66 228.67-46.66 46.66L480-433.33 251.33-204.67Z" />
+                              </svg></a>
+                          </li>
+                        <li>Home</li>
+                        <li><a href="/Hotride/html/service.html">Service</a></li>
                         <li>About us</li>
-                        <li><a href="/Hotride/html/pick.html">Book a Ride</a></li>
+                        <li> <a href="/Hotride/html/pick.html">Book a Ride</a></li>
+                    </ul>
+                    <ul>
+                        <li class="hideOnMobile">Home</li>
+                        <li class="hideOnMobile"><a href="/Hotride/html/service.html">Service</a></li>
+                        <li class="hideOnMobile">About us</li>
+                        <li class="hideOnMobile"> <a href="/Hotride/html/pick.html">Book a Ride</a></li>
+                        <li class="menu-button" onClick="showSidebar()">
+                            <a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="45px" viewBox="0 -960 960 960" width="60px"
+                                fill="#FFFF">
+                                <path d="M120-240v-66.67h720V-240H120Zm0-206.67v-66.66h720v66.66H120Zm0-206.66V-720h720v66.67H120Z" />
+                              </svg></a>
+                          </li>
                     </ul>
                 </nav>
             </div>
-        </div>
         <div class="top-content">
             <h1>Hotride</h1>
         </div>

@@ -121,10 +121,39 @@ a{
     color: white;
     text-decoration: none;
 }
+/* nav phone functions */
+/* test run for sidebar */
+.sidebar{
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    z-index: 999;
+    background-color: rgba(255, 255, 255, 0.87);
+    backdrop-filter: (10px);
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+.menu-button{
+    display: none;
+}
 
 
  /* for phone */
  @media(min-width: 319px) and (max-width: 520px){
+    .nav a{
+        color: #FF8A08;
+    }
+    .hideOnMobile{
+        display: none;
+    }
+    .menu-button{
+        display: block;
+    }
     .sect-cont{
         flex-direction: column;
     }
