@@ -120,6 +120,26 @@ nav ul li a:hover{
     display: flex;
     justify-content: space-around;
 }
+.ed-t{
+    opacity: 0;
+    transform: translateX(-100%);
+    transition: transform 1s, opacity 1s;
+    /* background-color: red; */
+}
+.pop-t{
+    transform: scale(0.5);
+    transition: transform 0.3s, opacity 0.3s;
+    top: 50%;
+    left: 50%;
+    transform-origin: center center;
+    z-index: 1000;
+}
+.me-t{
+    opacity: 0;
+    transform: translateX(20%);
+    transition: transform 1s, opacity 1s;
+
+}
 .st-servi{
     width: 23rem;
     background-color: rgba(245, 241, 241, 0.393);
@@ -322,6 +342,25 @@ a{
 .menu-button{
     display: none;
 }
+.active{
+    opacity: 0;
+    transform: translateX(-100%);
+    transition: transform 1s, opacity 1s;
+}
+/* animations effects */
+    /* Class to apply the sliding effect */
+.slide-in {
+    opacity: 1;
+    transform: translateX(0);
+}
+.slide-left{
+    opacity: 1;
+    transform: translateX(0);
+}
+.show {
+    opacity: 1;
+    transform: scale(1);
+  }
   /* for phone */
 @media(min-width: 319px) and (max-width: 520px){
     /* nav funcctions */
@@ -347,6 +386,9 @@ a{
     .active{
         padding: 2rem;
         padding-bottom: 7rem;
+        transform: translateX(-4%);
+        transition: transform 2s, opacity 1s;
+        
     }
     /* second-container */
     .second-content{
